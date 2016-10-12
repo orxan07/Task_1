@@ -66,20 +66,3 @@ class Island:
                         volume += self.calculate_lowland_volume(a, j, i)
 
         return volume
-
-
-if __name__ == '__main__':
-    a = [
-        [0, 5, 6, 5, 5, 5, 5, 5, 6, 5, 5, 1, 5],
-        [5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5],
-        [5, 5, 5, 5, 5, 2, 5, 5, 5, 5, 5, 5, 5],
-        [2, 5, 5, 5, 2, 1, 2, 5, 5, 5, 5, 5, 5],
-        [1, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5],
-        [1, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5],
-    ]
-
-    island = Island(a)
-    print str(island.get_volume())
-
-# land = raw_input('Input land: ')
-# land = [int(n) for n in land.split(' ')]
